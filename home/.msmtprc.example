@@ -1,0 +1,11 @@
+defaults
+tls on
+tls_starttls on
+tls_certcheck off
+account default
+host email-smtp.us-east-1.amazonaws.com
+port 587
+from system@emcien.com
+auth on
+user
+password
