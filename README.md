@@ -8,4 +8,7 @@
 - htop
 - i3
 - screen
+- vim
+- hub (will have to build from source)
+- rvm
 
