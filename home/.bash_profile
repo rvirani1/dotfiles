@@ -1,7 +1,3 @@
-#Required for the purpose of rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # Berkshelf Path
 export PATH="$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH"
 
@@ -93,3 +89,5 @@ man() {
 	LESS_TERMCAP_us=$'\E[04;38;5;146m' \
 	man "$@"
 }
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
