@@ -12,6 +12,10 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'scrooloose/nerdtree'
+
+Plugin 'airblade/vim-gitgutter'
+let g:ctrlp_show_hidden = 1
+
 Bundle 'vim-ruby/vim-ruby'
 set nocompatible
 syntax on
