@@ -33,11 +33,8 @@ sudo apt-get -qq -y install tree htop
 sudo apt-get -qq -y install openssl libssl-dev
 sudo apt-get -qq -y install i3 screen
 sudo apt-get -qq -y install gnome-tweak-tool
-<<<<<<< Updated upstream
 sudo apt-get -qq -y install qemu-utils
-=======
 sudo apt-get -qq -y install wine
->>>>>>> Stashed changes
 
 # Install common native gem build requirements
 sudo apt-get -qq -y install libreadline6-dev libyaml-dev libsqlite3-dev sqlite3
