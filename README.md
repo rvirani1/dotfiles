@@ -8,4 +8,7 @@
 6. Install Skype
 7. Install RubyEncoder
 8. Install Monokai theme for iTerm2 or GNome Terminal
-
+9. Install VMWare tools if using VMWare Fusion
+  `sudo apt-get install open-vm-tools`
+  `sudo apt-get install open-vm-tools-desktop`
+  
