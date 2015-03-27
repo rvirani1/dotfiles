@@ -1,8 +1,8 @@
 # dotfiles
 
+- Set up SSH Key with GitHub
 - If using Ubuntu, run the `install_ubuntu.sh` script with sudo
 - Install GitHub Hub utility from source
-- Set up SSH Key with GitHub
 - Symlink files from home directory into place
 - Install Skype
 - Install RubyEncoder
