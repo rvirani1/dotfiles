@@ -7,6 +7,7 @@ sudo apt-get update -qq -y
 # Install Dev Basics
 sudo apt-get -qq -y install mysql-server-5.6
 sudo apt-get -qq -y install redis-server
+sudo apt-get -qq -y install libmysqlclient-dev
 sudo apt-get -qq -y install vim
 sudo apt-get -qq -y install lftp
 sudo apt-get -qq -y install build-essential
@@ -31,6 +32,7 @@ sudo apt-get -qq -y install tree htop
 sudo apt-get -qq -y install openssl libssl-dev
 sudo apt-get -qq -y install i3 screen
 sudo apt-get -qq -y install gnome-tweak-tool
+sudo apt-get -qq -y install qemu-utils
 
 # Install common native gem build requirements
 sudo apt-get -qq -y install libreadline6-dev libyaml-dev libsqlite3-dev sqlite3
