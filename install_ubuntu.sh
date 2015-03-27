@@ -77,3 +77,11 @@ echo 'deb http://debian.sourcegear.com/ubuntu raring main' | sudo tee '/etc/apt/
 sudo wget -O - http://debian.sourcegear.com/SOURCEGEAR-GPG-KEY | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install diffmerge
+
+# Install NVM
+curl https://raw.githubusercontent.com/creationix/nvm/v0.24.0/install.sh | bash
+
+# Install Java 8
+sudo apt-add-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
