@@ -4,22 +4,23 @@ set -euv
 echo 'debconf debconf/frontend select Noninteractive' | sudo debconf-set-selections
 sudo apt-get update -qq -y
 
+# Install git from ppa
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+
 # Install Dev Basics
 sudo apt-get -qq -y install mysql-server-5.6
 sudo apt-get -qq -y install redis-server
 sudo apt-get -qq -y install libmysqlclient-dev
 sudo apt-get -qq -y install vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 sudo apt-get -qq -y install lftp
 sudo apt-get -qq -y install build-essential
 
 # Install node from ppa
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install nodejs
-
-# Install git from ppa
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install git
 
 # Install Google Chrome from PPA
 cd ~/Downloads
@@ -32,7 +33,11 @@ sudo apt-get -qq -y install tree htop
 sudo apt-get -qq -y install openssl libssl-dev
 sudo apt-get -qq -y install i3 screen
 sudo apt-get -qq -y install gnome-tweak-tool
+<<<<<<< Updated upstream
 sudo apt-get -qq -y install qemu-utils
+=======
+sudo apt-get -qq -y install wine
+>>>>>>> Stashed changes
 
 # Install common native gem build requirements
 sudo apt-get -qq -y install libreadline6-dev libyaml-dev libsqlite3-dev sqlite3
@@ -65,3 +70,10 @@ sudo sh -c "echo 'deb http://download.virtualbox.org/virtualbox/debian '$(lsb_re
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add - 
 sudo apt-get -qq -y update 
 sudo apt-get -qq -y install virtualbox-4.3 dkms
+
+# Install DiffMerge
+sudo touch /etc/apt/sources.list.d/sourcegear.list
+echo 'deb http://debian.sourcegear.com/ubuntu raring main' | sudo tee '/etc/apt/sources.list.d/sourcegear.list'
+sudo wget -O - http://debian.sourcegear.com/SOURCEGEAR-GPG-KEY | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install diffmerge
