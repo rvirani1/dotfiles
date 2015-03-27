@@ -1,0 +1,22 @@
+
+#Set gcc for Engine
+export GCC=gcc-4.8
+
+# Set up PostGres on Path
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
+# added by travis gem
+[ -f /Users/riaznvirani/.travis/travis.sh ] && source /Users/riaznvirani/.travis/travis.sh
+
+# Berkshelf Path
+export PATH="$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH"
+
+# Mac Aliases
+alias st='sourcetree .'
+alias sourcetree='open -a SourceTree'
+
+# Pebble SDK
+export PATH="/Users/riaznvirani/pebble-dev/PebbleSDK-current/bin:$PATH"
+
+# RubyEncoder to Path
+export PATH="/Applications/RubyEncoder.app/Contents/MacOS/:$PATH"

@@ -7,4 +7,5 @@
 5. Symlink files from home directory into place
 6. Install Skype
 7. Install RubyEncoder
+8. Install Monokai theme for iTerm2 or GNome Terminal
 
