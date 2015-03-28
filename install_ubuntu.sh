@@ -41,6 +41,8 @@ sudo apt-get -qq -y install libreadline6-dev libyaml-dev libsqlite3-dev sqlite3
 sudo apt-get -qq -y install autoconf libgdbm-dev libncurses5-dev automake libtool
 sudo apt-get -qq -y install bison pkg-config libffi-dev
 sudo apt-get -qq -y install libxslt-dev libxml2-dev
+sudo apt-get -qq -y install libcurl4-openssl-dev
+
 
 # Install RVM
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3

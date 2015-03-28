@@ -1,6 +1,7 @@
 # dotfiles
 
 - Set up SSH Key with GitHub
+- Clone down dotfiles
 - If using Ubuntu, run the `install_ubuntu.sh` script with sudo
 - Install GitHub Hub utility from source
 - Symlink files from home directory into place
