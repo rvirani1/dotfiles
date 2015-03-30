@@ -54,8 +54,6 @@ alias l='ls -laFGh'
 export PATH=/usr/local/bin:$PATH
 
 export EDITOR=/usr/bin/vim
-export JAVA_HOME="$(/usr/libexec/java_home)"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
 export WARN_ERRORS='-Werror'
 
 man() {

@@ -23,3 +23,7 @@ export PATH="/Applications/RubyEncoder.app/Contents/MacOS/:$PATH"
 
 # PyEnv Setup
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+
+export JAVA_HOME="$(/usr/libexec/java_home)"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
