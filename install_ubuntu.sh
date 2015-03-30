@@ -15,7 +15,7 @@ sudo apt-get -qq -y install redis-server
 sudo apt-get -qq -y install libmysqlclient-dev
 sudo apt-get -qq -y install vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-sudo apt-get -qq -y install lftp
+sudo apt-get -qq -y install lftp openssh-server
 sudo apt-get -qq -y install build-essential
 
 # Install Google Chrome from PPA
