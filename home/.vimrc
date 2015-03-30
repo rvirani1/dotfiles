@@ -14,7 +14,6 @@ Plugin 'tpope/vim-bundler'
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'airblade/vim-gitgutter'
-let g:ctrlp_show_hidden = 1
 
 Bundle 'vim-ruby/vim-ruby'
 set nocompatible
@@ -35,6 +34,7 @@ filetype plugin on
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_show_hidden = 1
 
 call vundle#end()            " required
 
