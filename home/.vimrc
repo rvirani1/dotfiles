@@ -14,6 +14,8 @@ Plugin 'tpope/vim-bundler'
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'airblade/vim-gitgutter'
+let g:gitgutter_enabled = 1 
+let g:gitgutter_sign_column_always = 1
 
 Bundle 'vim-ruby/vim-ruby'
 set nocompatible
@@ -30,6 +32,11 @@ Plugin 'tpope/vim-markdown'
 
 Plugin 'scrooloose/nerdcommenter'
 filetype plugin on
+
+Plugin 'bling/vim-airline'
+set laststatus=2
+
+Plugin 'scrooloose/syntastic'
 
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
