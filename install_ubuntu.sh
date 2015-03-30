@@ -18,10 +18,6 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 sudo apt-get -qq -y install lftp
 sudo apt-get -qq -y install build-essential
 
-# Install node from ppa
-curl -sL https://deb.nodesource.com/setup | sudo bash -
-sudo apt-get install nodejs
-
 # Install Google Chrome from PPA
 cd ~/Downloads
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
