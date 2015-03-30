@@ -1,7 +1,6 @@
 # ==========================================================================================
 
 # == Source External Files
-[[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
 [[ -s "$HOME/.bash_mac" ]] && source "$HOME/.bash_mac"
 [[ -s "$HOME/.bash_ubuntu" ]] && source "$HOME/.bash_ubuntu"
 [[ -s "$HOME/.bash_local" ]] && source "$HOME/.bash_local"
