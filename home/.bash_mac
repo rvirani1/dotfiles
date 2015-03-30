@@ -20,3 +20,6 @@ export PATH="/Users/riaznvirani/pebble-dev/PebbleSDK-current/bin:$PATH"
 
 # RubyEncoder to Path
 export PATH="/Applications/RubyEncoder.app/Contents/MacOS/:$PATH"
+
+# PyEnv Setup
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
