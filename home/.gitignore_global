@@ -4,3 +4,4 @@
 /.idea/
 .env
 atlassian-ide-plugin.xml
+*.swp

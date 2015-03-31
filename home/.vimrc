@@ -12,6 +12,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'scrooloose/nerdtree'
+map <C-n> :NERDTreeToggle<CR>
 
 Plugin 'airblade/vim-gitgutter'
 let g:gitgutter_enabled = 1 
