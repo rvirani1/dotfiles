@@ -24,6 +24,16 @@ export PATH="/Applications/RubyEncoder.app/Contents/MacOS/:$PATH"
 # PyEnv Setup
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
+# NVM Stuff
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
+
+# Try with-readline sftp
+alias sftp="with-readline sftp"
+
+# Add anybar helper
+function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
+

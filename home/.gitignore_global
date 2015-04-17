@@ -4,4 +4,5 @@
 /.idea/
 .env
 atlassian-ide-plugin.xml
+.ruby-gemset
 *.swp
