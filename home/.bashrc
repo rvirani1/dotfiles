@@ -35,9 +35,10 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 alias git=hub
 alias worker='bundle exec rake resque:work QUEUE=*'
 alias b='bundle exec'
+alias bunc='bundle install && bundle clean --force'
 alias gs='git status'
 alias gb='git branch'
-alias gc='git checkout'
+alias gco='git checkout'
 alias gc='git commit'
 alias gp='git pull'
 
