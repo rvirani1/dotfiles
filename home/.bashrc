@@ -36,6 +36,7 @@ alias git=hub
 alias worker='bundle exec rake resque:work QUEUE=*'
 alias b='bundle exec'
 alias bunc='bundle install && bundle clean --force'
+alias g='git'
 alias gs='git status'
 alias gb='git branch'
 alias gco='git checkout'

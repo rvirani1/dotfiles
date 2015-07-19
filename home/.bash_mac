@@ -34,6 +34,4 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
 # Try with-readline sftp
 alias sftp="with-readline sftp"
 
-# Add anybar helper
-function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
-
+alias cpgh="git rev-parse HEAD | pbcopy"
