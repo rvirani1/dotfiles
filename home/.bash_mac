@@ -15,9 +15,6 @@ export PATH="$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH"
 alias st='sourcetree .'
 alias sourcetree='open -a SourceTree'
 
-# Pebble SDK
-export PATH="/Users/riaznvirani/pebble-dev/PebbleSDK-current/bin:$PATH"
-
 # RubyEncoder to Path
 export PATH="/Applications/RubyEncoder.app/Contents/MacOS/:$PATH"
 
