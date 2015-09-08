@@ -34,4 +34,3 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
 # Try with-readline sftp
 alias sftp="with-readline sftp"
 
-alias cpgh="git rev-parse HEAD | pbcopy"

@@ -42,6 +42,7 @@ alias gb='git branch'
 alias gco='git checkout'
 alias gc='git commit'
 alias gp='git pull'
+alias last_commit="git rev-parse HEAD | pbcopy && git rev-parse HEAD"
 
 # Add colors to ls
 alias ls='ls -FG'
