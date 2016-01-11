@@ -61,6 +61,7 @@ endif
 
 colorscheme monokai
 set t_Co=256
+set backspace=indent,eol,start
 
 " Brief help
 " :PluginList       - lists configured plugins
