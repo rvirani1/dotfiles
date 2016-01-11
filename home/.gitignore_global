@@ -6,3 +6,4 @@
 atlassian-ide-plugin.xml
 .ruby-gemset
 *.swp
+dump.rdb
