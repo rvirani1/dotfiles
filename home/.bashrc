@@ -58,6 +58,7 @@ export PATH=/usr/local/bin:$PATH
 
 export EDITOR=/usr/bin/vim
 export WARN_ERRORS='-Werror'
+export TERM_CHILD=1
 
 man() {
 	env LESS_TERMCAP_mb=$'\E[01;31m' \
