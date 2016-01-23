@@ -1,14 +1,4 @@
 # Mac Aliases
 alias st='sourcetree .'
 alias sourcetree='open -a SourceTree'
-
-# PyEnv Setup
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
-# NVM Stuff
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
-export JAVA_HOME="$(/usr/libexec/java_home)"
-
 export PAGER=vimpager
