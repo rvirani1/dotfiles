@@ -59,6 +59,9 @@ if has("mouse")
 	  set mouse=a
 endif
 
+:vnoremap < <gv
+:vnoremap > >gv
+
 colorscheme monokai
 set t_Co=256
 set backspace=indent,eol,start

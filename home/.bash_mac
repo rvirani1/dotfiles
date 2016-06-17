@@ -1,4 +1,6 @@
 # Mac Aliases
 alias st='sourcetree .'
 alias sourcetree='open -a SourceTree'
-export PAGER=vimpager
+
+# Android Hookup for Cordova
+export PATH=${PATH}:/Development/android-sdk/platform-tools:/Development/android-sdk/tools:/Users/riaznvirani/Library/Android/sdk/platform-tools
