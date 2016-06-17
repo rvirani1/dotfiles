@@ -1,2 +1,7 @@
 # Set CapsLock as Control
-setxkbmap -layout us -option ctrl:nocaps
+if [ "$DISPLAY" != ""]; then
+  setxkbmap -layout us -option ctrl:nocaps
+fi
+
+# For Androi Studio
+export PATH=$PATH:~/android-studio/bin
