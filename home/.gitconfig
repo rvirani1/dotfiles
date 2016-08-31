@@ -1,6 +1,6 @@
 [user]
 	email = riaz.n.virani@gmail.com
-	name = Riaz Virani
+	name = Riaz N Virani
 [core]
 	excludesfile = /Users/riaznvirani/.gitignore_global
 	editor = vim
@@ -44,3 +44,5 @@
 	required = true
 [branch]
 	autosetupmerge = always
+[commit]
+	template = /Users/riaznvirani/.stCommitMsg
