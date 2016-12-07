@@ -43,6 +43,7 @@ alias gco='git checkout'
 alias gc='git commit'
 alias gp='git pull'
 alias last_commit="git rev-parse HEAD | pbcopy && git rev-parse HEAD"
+alias clear_resque="rails runner 'Resque.queues.each{|q| Resque.redis.del \"queue:#{q}\" }; puts \"Cleared Queues\"'"
 
 # Add colors to ls
 alias ls='ls -FG'
