@@ -157,3 +157,22 @@ fi
 
 export NVM_DIR="/Users/riaznvirani/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+enter_directory(){
+        if [ "$PWD" != "$PREV_PWD" ]; then
+                PREV_PWD="$PWD";
+                if [ -e ".nvmrc" ]; then
+                        nvm use;
+                fi
+        fi
+}
+
+export PROMPT_COMMAND="$PROMPT_COMMAND enter_directory ;"
+
+# Android Setup
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+# Yarn Stuff
+export PATH="$PATH:`yarn global bin`"
