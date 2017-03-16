@@ -34,6 +34,7 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 
 alias git=hub
 alias worker='RUN_AT_EXIT_HOOKS=yes bundle exec rake resque:work QUEUE=*'
+alias sworker='bundle exec sidekiq -c 5 -v -q default -q mailers'
 alias b='bundle exec'
 alias bunc='bundle install && bundle clean --force'
 alias g='git'
