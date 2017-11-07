@@ -177,3 +177,8 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # Yarn Stuff
 export PATH="$PATH:`yarn global bin`"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(pyenv init -)"
+
+# added by travis gem
+[ -f /Users/riaznvirani/.travis/travis.sh ] && source /Users/riaznvirani/.travis/travis.sh
