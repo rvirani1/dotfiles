@@ -57,6 +57,7 @@ alias l='ls -laFGh'
 # === Exports =====
 # Loads the local first
 export PATH=/usr/local/bin:$PATH
+export PATH=~/.local/bin:$PATH
 
 export EDITOR=/usr/bin/vim
 export WARN_ERRORS='-Werror'
@@ -179,6 +180,3 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH="$PATH:`yarn global bin`"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 eval "$(pyenv init -)"
-
-# added by travis gem
-[ -f /Users/riaznvirani/.travis/travis.sh ] && source /Users/riaznvirani/.travis/travis.sh

@@ -12,5 +12,7 @@ if [ -f '/Users/riaznvirani/google-cloud-sdk/path.bash.inc' ]; then source '/Use
 if [ -f '/Users/riaznvirani/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/riaznvirani/google-cloud-sdk/completion.bash.inc'; fi
 
 export PATH=$PATH:/Users/riaznvirani/bin
-
-source '/Users/riaznvirani/lib/azure-cli/az.completion'
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

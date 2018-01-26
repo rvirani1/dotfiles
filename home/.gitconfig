@@ -1,15 +1,12 @@
 [user]
 	email = riaz.n.virani@gmail.com
-	name = Riaz N Virani
+	name = Riaz Virani
 [core]
 	excludesfile = /Users/riaznvirani/.gitignore_global
 	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [mergetool]
 	keepBackup = true
 [alias]
@@ -44,5 +41,6 @@
 	required = true
 [branch]
 	autosetupmerge = always
-[commit]
-	template = /Users/riaznvirani/.stCommitMsg
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

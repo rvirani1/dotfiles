@@ -18,8 +18,6 @@ Plugin 'scrooloose/nerdtree'
 map <C-n> :NERDTreeToggle<CR>
 
 Plugin 'airblade/vim-gitgutter'
-let g:gitgutter_enabled = 1 
-let g:gitgutter_sign_column_always = 1
 
 Bundle 'vim-ruby/vim-ruby'
 set nocompatible
