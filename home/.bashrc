@@ -45,6 +45,7 @@ alias gc='git commit'
 alias gp='git pull'
 alias last_commit="git rev-parse HEAD | pbcopy && git rev-parse HEAD"
 alias clear_resque="rails runner 'Resque.queues.each{|q| Resque.redis.del \"queue:#{q}\" }; puts \"Cleared Queues\"'"
+alias ocd="OVERCOMMIT_DISABLE=1"
 
 # Add colors to ls
 alias ls='ls -FG'
@@ -156,21 +157,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-export NVM_DIR="/Users/riaznvirani/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-enter_directory(){
-        if [ "$PWD" != "$PREV_PWD" ]; then
-                PREV_PWD="$PWD";
-                if [ -e ".nvmrc" ]; then
-                        nvm use;
-                fi
-        fi
-}
-
-export PROMPT_COMMAND="$PROMPT_COMMAND enter_directory ;"
-
 # Android Setup
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
@@ -180,3 +166,9 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH="$PATH:`yarn global bin`"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 eval "$(pyenv init -)"
+
+# NVM Stuff
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+eval $(thefuck --alias)
