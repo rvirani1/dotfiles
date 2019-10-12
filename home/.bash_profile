@@ -10,3 +10,4 @@ if [ -f '/Users/riaznvirani/google-cloud-sdk/completion.bash.inc' ]; then source
 
 export PATH=$PATH:/Users/riaznvirani/bin
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export BASH_SILENCE_DEPRECATION_WARNING=1
