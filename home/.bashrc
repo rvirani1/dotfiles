@@ -165,7 +165,6 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 # Yarn Stuff
 export PATH="$PATH:`yarn global bin`"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-eval "$(pyenv init -)"
 
 # NVM Stuff
 export NVM_DIR="$HOME/.nvm"
