@@ -10,6 +10,3 @@ if [ -f '/Users/riaznvirani/google-cloud-sdk/completion.bash.inc' ]; then source
 
 export PATH=$PATH:/Users/riaznvirani/bin
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
