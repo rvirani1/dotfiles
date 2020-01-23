@@ -45,7 +45,9 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[commit]
-	template = /Users/riaznvirani/.stCommitMsg
 [credential]
 	helper = osxkeychain
+[commit]
+	template = /Users/riaznvirani/.stCommitMsg
+[gpg]
+	program = /usr/local/bin/gpg
