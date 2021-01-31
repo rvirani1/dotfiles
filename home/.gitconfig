@@ -51,3 +51,5 @@
 	template = /Users/riaznvirani/.stCommitMsg
 [gpg]
 	program = /usr/local/bin/gpg
+[pull]
+	ff = only

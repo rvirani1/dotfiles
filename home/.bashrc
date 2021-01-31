@@ -46,6 +46,7 @@ alias gp='git pull'
 alias last_commit="git rev-parse HEAD | pbcopy && git rev-parse HEAD"
 alias clear_resque="rails runner 'Resque.queues.each{|q| Resque.redis.del \"queue:#{q}\" }; puts \"Cleared Queues\"'"
 alias ocd="OVERCOMMIT_DISABLE=1"
+alias gbc="git rev-parse --abbrev-ref HEAD"
 
 # Add colors to ls
 alias ls='ls -FG'
@@ -161,10 +162,6 @@ fi
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
-
-# Yarn Stuff
-export PATH="$PATH:`yarn global bin`"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # NVM Stuff
 export NVM_DIR="$HOME/.nvm"
